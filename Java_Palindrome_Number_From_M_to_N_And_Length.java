@@ -5,22 +5,28 @@ import java.util.Scanner;
 public class Java_Palindrome_Number_From_M_to_N_And_Length {
 
     public static void main(String[] args) {
-        int num1, num2;
+        int num1, num2, count = 0 ;
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Input Integer Number : ");
+        System.out.print("Input 1st Integer Number : ");
         num1 = scanner.nextInt();
 
-        System.out.print("Input Integer Number : ");
+        System.out.print("Input 2nd Integer Number : ");
         num2 = scanner.nextInt();
 
         if (num1 < num2) {
             for (int i = num1; i <= num2; i++) {
                 if(isPalinDrome(i)){
                     System.out.print(i+" , ");
+                    count++;
                 }
             }
+        }else{
+            System.out.println("Must Be 1st Value big than 2nd Value");
         }
+        
+        System.out.println("\nTotal Palindrome Number is : "+count);
+        
 
     }
     
