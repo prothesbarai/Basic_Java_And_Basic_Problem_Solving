@@ -20,10 +20,11 @@ public class Java_Fibonacci_Series_And_Sum {
         }
         System.out.println("\nTotal Sum = "+sum);
 
+        
+        // Find Fibonacci number specified position
         System.out.print("Find Any Position In Series : ");
         position = scanner.nextInt();
-        
-        
+       
         if (position<=num) {
             
             first = 1;
