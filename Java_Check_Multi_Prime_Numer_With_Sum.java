@@ -43,6 +43,8 @@ public class Java_Check_Multi_Prime_Numer_With_Sum {
             System.out.println("\nSum = "+sum);
             
             
+        }else{
+            System.out.println("Must Be, 2nd Number : "+num2+" big than Number 1st : "+num1);
         }
 
     }
