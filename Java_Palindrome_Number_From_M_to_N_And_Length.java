@@ -22,7 +22,7 @@ public class Java_Palindrome_Number_From_M_to_N_And_Length {
                 }
             }
         }else{
-            System.out.println("Must Be 1st Value big than 2nd Value");
+            System.out.println("Must Be 2nd Value big than 1st Value");
         }
         
         System.out.println("\nTotal Palindrome Number is : "+count);
