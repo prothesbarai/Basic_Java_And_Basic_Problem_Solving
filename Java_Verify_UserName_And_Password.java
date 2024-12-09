@@ -14,7 +14,7 @@ public class Java_Verify_UserName_And_Password {
             try{
                 userNamePass();
             if (user_name.contains("prothes") && password == 1234) {
-                System.out.println("\n\nWelcome !\nThe END");
+                System.out.println("\n\nWelcome !\nTHE END");
                 break;
             }else{
                 System.out.println("Try Again !");
