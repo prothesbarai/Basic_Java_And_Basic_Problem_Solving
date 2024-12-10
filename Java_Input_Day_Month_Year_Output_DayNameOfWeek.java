@@ -2,7 +2,6 @@ package com.mycompany.basicjava;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;
-import java.time.Month;
 import java.util.Scanner;
 
 public class Java_Input_Day_Month_Year_Output_DayNameOfWeek {
