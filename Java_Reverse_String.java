@@ -5,7 +5,7 @@ public class Java_Reverse_String {
         String getString,reverse;
         Scanner scanner = new Scanner(System.in);
         
-        System.out.print("Input Integer Number : ");
+        System.out.print("Input Any String : ");
         getString = scanner.next();
         
         // Reverse String in One Line Command
