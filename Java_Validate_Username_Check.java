@@ -4,7 +4,6 @@ public class Java_Validate_Username_Check {
     
     public static String username;
     public static Scanner scanner = new Scanner(System.in);
-
     public static void main(String[] args) {
         System.out.print("UserName : ");
         username = scanner.nextLine();
