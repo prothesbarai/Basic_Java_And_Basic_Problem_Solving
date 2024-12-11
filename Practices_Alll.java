@@ -1,31 +1,20 @@
 package com.mycompany.basicjava;
-
-import java.time.DayOfWeek;
-import java.time.LocalDate;
-import java.util.Scanner;
-
 public class Practices_Alll {
 
     public static void main(String[] args) {
         
-        int day, month, year;
-        Scanner scanner = new Scanner(System.in);
+        int n = 15; // Change this value for different ranges
         
-       
-        System.out.print("Month : ");
-        month = scanner.nextInt();
-        System.out.print("Day : ");
-        day = scanner.nextInt();
-        System.out.print("Year : ");
-        year = scanner.nextInt();
-        
-        
-        try{
-            LocalDate date = LocalDate.of(year, month, day);
-            DayOfWeek dayOfWeek = date.getDayOfWeek();
-            System.out.println(dayOfWeek);     
-        }catch(Exception e){
-            System.out.println("Something Error !");
+        for (int i = 1; i <= n; i++) {
+            if (i % 3 == 0 && i % 5 == 0) {
+                System.out.println("FizzBuzz");
+            } else if (i % 3 == 0) {
+                System.out.println("Fizz");
+            } else if (i % 5 == 0) {
+                System.out.println("Buzz");
+            } else {
+                System.out.println(i);
+            }
         }
         
         
