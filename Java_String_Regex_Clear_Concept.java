@@ -3,13 +3,12 @@ import java.util.Scanner;
 public class Java_String_Regex_Clear_Concept {
     public static void main(String[] args) {
         String regex1,regex2,regex3,regex4,regex5,regex6,regex7,regex8,regex9;
-        String regex10,regex11,regex12,regex13,regex14,regex15;
+        String regex10,regex11,regex12;
         Scanner scanner = new Scanner(System.in);
         
         /* ==== Define Regex Formula ==== */
      
         
-       
         // Type 1 :  "a.c" → "arc" or "a..c" → "arrc", or "a...c" → "arrrc"
         regex1 = "a..b"; // First a Last b but middle only 2 another
         System.out.print("Input For Regex1 : (a..b) : ");
@@ -111,6 +110,43 @@ public class Java_String_Regex_Clear_Concept {
         }else{
             System.out.println("No Match. soln: a to z any single Character match");
         }
+        
+        
+        // Type 10 :  "^[a-z].*" [ Must be first Character Small a-z end anything] 
+                               // Same To for "^[A-Z].*"  first Character Capital A-Z end anything
+        regex10 = "^[a-z].*"; // First Character always smallar letter 
+        System.out.print("\nInput For Regex10 : ^[a-z].* : ");
+        String getString10 = scanner.nextLine();
+        if (getString10.matches(regex10)) {
+            System.out.println("Match Regex 10 : formula : ^[a-z].*");
+        }else{
+            System.out.println("No Match. soln: First Character always smallar letter");
+        }
+        
+        
+        
+        // Type 11 :  "^[a-zA-Z].*" [First Character must be Character End Anythings] 
+        regex11 = "^[a-zA-Z].*"; // First Character always letter  
+        System.out.print("\nInput For Regex11 : ^[a-zA-Z].* : ");
+        String getString11 = scanner.nextLine();
+        if (getString11.matches(regex11)) {
+            System.out.println("Match Regex 11 : formula : ^[a-zA-Z].*");
+        }else{
+            System.out.println("No Match. soln: First Character always letter");
+        }
+        
+        
+        // Type 12 :  "^[a-zA-Z][a-zA-Z0-9_]*$" [First Character must be Letter End only a-z,A-Z,0-9 and _ ] 
+        regex12 = "^[a-zA-Z][a-zA-Z0-9_]*$"; // Always First is Character end is a,A,9,_  
+        System.out.print("\nInput For Regex12 : ^[a-zA-Z][a-zA-Z0-9_]*$ : ");
+        String getString12 = scanner.nextLine();
+        if (getString12.matches(regex12)) {
+            System.out.println("Match Regex 12 : formula : ^[a-zA-Z][a-zA-Z0-9_]*$");
+        }else{
+            System.out.println("No Match. soln: Always First is Character end is a,A,9,_");
+        }
+        
+        
         
         
         
