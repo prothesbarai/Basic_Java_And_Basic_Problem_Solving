@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Java_Array_1_Dimentional_Part_1 {
     public static void main(String[] args) {
         int num,sum=0;
+        double avg,arrayLength;
         
         Scanner scanner = new Scanner(System.in);
         
@@ -30,8 +31,9 @@ public class Java_Array_1_Dimentional_Part_1 {
         for (int i = 0; i < myArray.length; i++) {
             sum += myArray[i]; 
         }
-        System.out.println("\n\nSum Of Array = "+sum);
-        
-        
+        System.out.println("\nSum Of Array = "+sum);
+        arrayLength = myArray.length;
+        avg = sum/arrayLength;
+        System.out.println("Avg : "+avg);
     }
 }
