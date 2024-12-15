@@ -46,5 +46,18 @@ public class Java_String_In_All_One_Class {
         boolean output2 = s2.endsWith("s");
         System.out.println("End Value s Check in s2 : "+output2);
         
+        
+        // String Reverse
+        String reverse;
+        reverse = new StringBuilder(s1).reverse().toString();
+        System.out.println("Reverse s1 : "+reverse);
+        
+        
+        // String er First And Last Space revome korar jonno : trim()
+        String myString = "    Bangladesh is  my  Country    ";
+        System.out.println(myString);
+        String stringTrim = myString.trim();
+        System.out.println(stringTrim);
+        
     }
 }
