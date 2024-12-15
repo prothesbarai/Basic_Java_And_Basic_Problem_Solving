@@ -66,5 +66,22 @@ public class Java_String_In_All_One_Class {
         System.out.println("Before Replace : "+myName);
         String myNm = myName.replace("m", "s");
         System.out.println("After Replace : "+myNm);
+        
+        
+        // Split() means Cut Base on any String or space
+        String myS1 = "This is a beautiful country";
+        String myS2 = "This_is_a_beautiful country";
+        String[] splitText1 = myS1.split(" "); // Divide based on space
+        String[] splitText2 = myS2.split("_"); // Divide based on Underscore
+        // Using For Each Loops
+        for (String x : splitText1) {
+            System.out.println(x);
+        }
+        // Using For Each Loops
+        for (String y : splitText2) {
+            System.out.println(y);
+        }
+        
+        
     }
 }
