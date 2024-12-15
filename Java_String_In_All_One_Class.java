@@ -59,5 +59,12 @@ public class Java_String_In_All_One_Class {
         String stringTrim = myString.trim();
         System.out.println(stringTrim);
         
+        
+        
+        // Replace Any String using replace()
+        String myName = "Amp prothem & Amp mhreyami";
+        System.out.println("Before Replace : "+myName);
+        String myNm = myName.replace("m", "s");
+        System.out.println("After Replace : "+myNm);
     }
 }
