@@ -83,5 +83,31 @@ public class Java_String_In_All_One_Class {
         }
         
         
+        
+        
+        
+        // StringBuffer  Start Here ===================
+        System.out.println("\n==================String Buffer====================");
+        /*
+            String vs StringBuffer in main difference is that
+            String in one variable is not dynamically change value
+            But StringBuffer is Dynamically Change Value
+        */
+        
+        StringBuffer buffer = new StringBuffer();
+        buffer.append("Prothes");
+        buffer.append(" Barai");
+        System.out.println(buffer);
+        buffer.reverse();
+        System.out.println(buffer);
+        buffer.delete(0, 2); // 0 index to before 2 index delete the letter
+        System.out.println(buffer);
+        buffer.deleteCharAt(0); // Only 0 Number index delete 
+        System.out.println(buffer);
+        // StringBuffer  End Here ===================
+        
+        
+        
+        
     }
 }
