@@ -109,5 +109,25 @@ public class Java_String_In_All_One_Class {
         
         
         
+        // StringBuilder  Start Here ===================
+        /*
+            Same to as String Buffer
+        */
+        System.out.println("\n==================String Builder====================");
+        String sp = "Prothes";
+        
+        StringBuilder builder = new StringBuilder();
+        builder.append(sp);
+        builder.append(" Barai");
+        System.out.println(builder);
+        builder.reverse();
+        System.out.println(builder);
+        builder.delete(0, 2); // 0 index to before 2 index delete the letter
+        System.out.println(builder);
+        builder.deleteCharAt(0); // Only 0 Number index delete 
+        System.out.println(builder);
+        builder.replace(0, 5, "a"); // 0 - 5 replace and by one character a 
+        System.out.println(builder);
+        
     }
 }
