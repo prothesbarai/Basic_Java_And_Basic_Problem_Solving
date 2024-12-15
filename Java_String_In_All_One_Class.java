@@ -36,5 +36,15 @@ public class Java_String_In_All_One_Class {
         // Uppercase to lowercase
         System.out.println(s2.toLowerCase());
         
+        
+        // Start With Alphabet Check
+        boolean output1 = s2.startsWith("P");
+        System.out.println("Start Value P Check in s2 : "+output1);
+        
+        
+        // End With Alphabet Check
+        boolean output2 = s2.endsWith("s");
+        System.out.println("End Value s Check in s2 : "+output2);
+        
     }
 }
