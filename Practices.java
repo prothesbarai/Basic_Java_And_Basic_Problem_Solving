@@ -1,7 +1,5 @@
 package com.mycompany.basicjava;
-
 import java.util.Scanner;
-
 public class Practices {
     public static void main(String[] args) {
         int numOfAnimal;

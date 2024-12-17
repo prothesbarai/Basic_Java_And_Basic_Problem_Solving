@@ -52,7 +52,7 @@ public class Java_Basic_Class_And_Objects_Part_2 {
 
         String names, gender, sub;
         int age, phn, year;
-        // Create an Constractor
+        // Create an Constractor with Parameter
         // Constractor er name same as Class name and without return Type
         public Teacher(String names, String gender, String sub, int age, int phn, int year) {
             this.names = names;
