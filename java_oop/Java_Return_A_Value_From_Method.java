@@ -30,8 +30,9 @@ public class Java_Return_A_Value_From_Method {
             return x;
         }
         
+        
         public String CheckPhnNumber(String countryCode){
-            String result = "";
+            String result;
             if(countryCode.contains("1")){
                 result = "United States";
             }else if(countryCode.contains("91")){
@@ -47,6 +48,8 @@ public class Java_Return_A_Value_From_Method {
             }
             return result;
         }
+        
+        
         
         
         
