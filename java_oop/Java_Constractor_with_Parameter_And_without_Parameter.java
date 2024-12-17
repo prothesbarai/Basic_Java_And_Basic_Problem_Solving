@@ -35,7 +35,8 @@ public class Java_Constractor_with_Parameter_And_without_Parameter {
         Rules Of Constractor : 
                              1. Same to name as Class name
                              2. Without return type even including void 
-                             3. Create many Constractor in one class
+                             3. Create many Constractor in one class (But Different Parameter)
+                                And its a called constractor overloading......
                              4. But Constractor Find/ terget Based On its Parameter
     */
     public static class Student{
