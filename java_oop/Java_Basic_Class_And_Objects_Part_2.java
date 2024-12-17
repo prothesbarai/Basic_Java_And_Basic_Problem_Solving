@@ -42,7 +42,7 @@ public class Java_Basic_Class_And_Objects_Part_2 {
                 teachers[i].setPrint(i);
             }
         }catch(Exception e){
-            System.out.println("Something Wrong. Check Your Input");
+            System.out.println("Something Wrong.Please Check Your Input");
         }
 
     }
