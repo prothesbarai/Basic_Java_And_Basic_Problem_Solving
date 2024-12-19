@@ -7,13 +7,13 @@ package com.mycompany.basicjava.java_oop.static_veriable;
     Korte kono Object Create kora lage na . Directly Class name deye then
     (.) Dot Sign Deye Static Keyword er method or Data Access Kora Jay
 */
-public class ClassFile {
+public class ClassName {
     String name,gender;
     static String university = "Barisal Information Technology College";
     int id;
     double result;
     
-    public ClassFile(String name,String gender,int id,double result){
+    public ClassName(String name,String gender,int id,double result){
         this.name = name;
         this.gender = gender;
         this.id = id;
