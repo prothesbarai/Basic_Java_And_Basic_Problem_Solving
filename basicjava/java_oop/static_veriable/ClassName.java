@@ -8,7 +8,9 @@ package com.mycompany.basicjava.java_oop.static_veriable;
     (.) Dot Sign Deye Static Keyword er method or Data Access Kora Jay
 */
 public class ClassName {
+    // Instance Variable declaration
     String name,gender;
+    // Static Variable Declaration
     static String university = "Barisal Information Technology College";
     int id;
     double result;

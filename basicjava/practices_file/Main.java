@@ -11,6 +11,7 @@ public class Main {
         numOfItems = scanner.nextInt();
         scanner.nextLine();
         
+        System.out.println("University : "+Sub.university+"\n\n\n\n");
         
         // ========== Array ==========
         Sub[] subs = new Sub[numOfItems];
