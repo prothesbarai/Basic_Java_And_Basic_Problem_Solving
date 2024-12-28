@@ -1,6 +1,7 @@
 package com.mycompany.basicjava.practices_file;
 import java.text.NumberFormat;
 import java.util.Locale;
+import java.util.Scanner;
 
 
 public class Sub {
@@ -18,7 +19,8 @@ public class Sub {
     public String india(){
         Locale inlocale = new Locale("en", "IN");
         NumberFormat numberFormat = NumberFormat.getCurrencyInstance(inlocale);
-        String india = numberFormat.format(payment).replace("₹", "Rs.");
+        //String india = numberFormat.format(payment).replace("₹", "Rs.");
+        String india = "Rs." +numberFormat.format(payment).substring(1);
         return india;
     }
     public String China(){
@@ -28,11 +30,28 @@ public class Sub {
         return china;
     }
     
+    public String France(){
+        Locale franceLocale = Locale.FRANCE;
+        NumberFormat fnumberFormat = NumberFormat.getCurrencyInstance(franceLocale);
+        String france = fnumberFormat.format(payment);
+        return france;
+    }
+    
     
     public void getCurrencyInstance(){
         System.out.println("US: "+usa());
         System.out.println("India: "+india());
         System.out.println("China: "+China());
-        System.out.println("\u00A5"); // Prints ￥
+        System.out.println("France: "+France());
+    }
+    
+    
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        double num = scanner.nextDouble();
+        
+        Sub sub = new Sub(num);
+        sub.getCurrencyInstance();
+        
     }
 }
