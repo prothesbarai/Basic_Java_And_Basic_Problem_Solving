@@ -1,19 +1,22 @@
 package com.mycompany.basicjava.practices_file;
+
+import java.util.Scanner;
+
 public class Pro {
     public static void main(String[] args) {
         
-        Shreyasi shreyasi = new Shreyasi("Shreyasi", 23, 3.50);
-        shreyasi.setOutput(2);
+        int a,b,c;
+        String x;
+        Scanner scanner = new Scanner(System.in);
+        
+        x = scanner.nextLine();
+        a = scanner.nextInt();
+        b = scanner.nextInt();
         
         
-        Shreyasi shreyasi2 = new Shreyasi("Prothes", 23);
-        shreyasi2.setOutput(3);
+        c = a+b;
         
-        int x1 = shreyasi.add(10, 10);
-        System.out.println("Add : "+x1);
-        
-        double x2 = shreyasi.add(10.55, 10.77);
-        System.out.println("Add : "+x2);
+        System.out.println("Name : "+x+"\n"+"Age is : "+c);
         
     }
 }
