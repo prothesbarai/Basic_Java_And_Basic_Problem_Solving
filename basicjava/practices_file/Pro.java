@@ -5,18 +5,17 @@ import java.util.Scanner;
 public class Pro {
     public static void main(String[] args) {
         
-        int a,b,c;
-        String x;
+        
+        // C to F
+        // Fahrenheit = (Celsius * 1.8) + 32
+        double C,F;
         Scanner scanner = new Scanner(System.in);
         
-        x = scanner.nextLine();
-        a = scanner.nextInt();
-        b = scanner.nextInt();
+        C = scanner.nextDouble();
         
+        F = (C * 1.8) + 32;
         
-        c = a+b;
-        
-        System.out.println("Name : "+x+"\n"+"Age is : "+c);
+        System.out.println("F : "+F);
         
     }
 }
