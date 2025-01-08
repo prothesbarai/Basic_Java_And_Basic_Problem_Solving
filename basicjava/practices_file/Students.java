@@ -28,20 +28,17 @@ public class Students {
     
     
     public double calculateGpa(){
-        double sum = 0,result,creditHours = 3.0,temp,totalCreditHours ;
+        double sum = 0,temp,totalCreditHours ;
         ArrayList<Double> arrayList = new ArrayList();
         for(double i : gradePoints) {
-            temp = i * creditHours;
+            temp = i * 3.0;
             arrayList.add(temp);
         }
         for (double i : arrayList) {
             sum += i;
         }
-        
-        totalCreditHours = 3.0 * arrayList.size();
-        result = sum / totalCreditHours;
-        
-        return result;
+        totalCreditHours = 3.0 * arrayList.size();  
+        return sum / totalCreditHours;  
     }
     
     
@@ -55,7 +52,6 @@ public class Students {
         System.out.println("ID : "+id);
         System.out.println("Year : "+year);
         System.out.println("GPA : " + gpa);
-
     }
     
 }
