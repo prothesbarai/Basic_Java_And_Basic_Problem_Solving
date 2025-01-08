@@ -1,5 +1,4 @@
 package com.mycompany.basicjava.practices_file;
-
 import java.util.ArrayList;
 
 public class Students {

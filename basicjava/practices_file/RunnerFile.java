@@ -1,6 +1,4 @@
 package com.mycompany.basicjava.practices_file;
-import java.util.Arrays;
-import java.util.Scanner;
 public class RunnerFile {
     public static void main(String[] args) {
 
@@ -9,7 +7,8 @@ public class RunnerFile {
         Students students = new Students("Prothes", "Male", 25,"Science", "CSE", 18502002591L, 1923, 2025,gpa);
         students.setPrinted();
         
-        
+        OthersClass othersClass = new OthersClass(10, "Navy Blue");
+        othersClass.setPrinted();
         
     }
 }
