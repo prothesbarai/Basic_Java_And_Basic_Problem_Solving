@@ -16,7 +16,7 @@ public class RunnerClass {
             myArray[i] = scanner.nextInt();
         }
         
-        System.out.println("\n===========================================");
+        System.out.println("\n===========================================\n\n");
         
         // Print Array
         for (int i = 0; i < myArray.length; i++) {
@@ -24,6 +24,36 @@ public class RunnerClass {
         }
         
         
+        // All Array sum
+        int sum = 0;
+        for (int i = 0; i < myArray.length; i++) {
+            sum += myArray[i];
+        }
+        System.out.println("\nSum : "+sum);
+        
+        
+        // Avg In Array
+        double avg;
+        avg = sum/myArray.length;
+        System.out.println("Avg : "+avg);
+        
+        // Find Max Value In the Array
+        int max = myArray[0];
+        for (int i = 0; i < myArray.length; i++) {
+            if (max<myArray[i]) {
+                max = myArray[i];
+            }
+        }
+        System.out.println("Maximum : "+max);
+        
+        // Find The Minimum Number in Array
+        int min = myArray[0];
+        for (int i = 0; i < myArray.length; i++) {
+            if (min > myArray[i]) {
+                min = myArray[i];
+            }
+        }
+        System.out.println("Minimum : "+min);
         
         
         
