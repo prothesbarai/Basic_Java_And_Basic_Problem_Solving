@@ -12,7 +12,7 @@ public class RunnerClass {
         num = scanner.nextInt();
         scanner.nextLine();
         
-        String[] myArray = {"Friday","Saturday","Sunday","Monday","Tuesday","Wednesday","Thusday"};
+        String[] myArray = {"Sunday","Monday","Tuesday","Wednesday","Thusday","Friday","Saturday"};
         
         
         String getData = myArray[num];
