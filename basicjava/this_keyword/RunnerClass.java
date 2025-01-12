@@ -12,11 +12,19 @@ public class RunnerClass {
         num = scanner.nextInt();
         scanner.nextLine();
         
-        String[] myArray = {"Sunday","Monday","Tuesday","Wednesday","Thusday","Friday","Saturday"};
+        String[] myArray = {"Days : ","Sunday","Monday","Tuesday","Wednesday","Thusday","Friday","Saturday"};
         
         
-        String getData = myArray[num];
-        System.out.println("Day is : "+getData);
+        if (num > 0 && num <=7) {
+            String getData = myArray[num];
+            System.out.println("Day is : "+getData);
+        }else{
+            System.out.println("Oh ! NO ! Input is Wrong !");
+        }
+        
+        
+        
+        
         
         
         
