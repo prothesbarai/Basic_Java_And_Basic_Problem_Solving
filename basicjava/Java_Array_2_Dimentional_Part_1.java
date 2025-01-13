@@ -70,6 +70,33 @@ public class Java_Array_2_Dimentional_Part_1 {
         
         
         
+        // Any Column Sum
+        System.out.print("Sum Number Of Column : ");
+        int sumAnyCol = 0,getColumnNum;
+        getColumnNum = scanner.nextInt();
+        scanner.nextLine();
+        
+        if (getColumnNum >= 0 || getColumnNum <= cols) {
+            for (int i = 0; i < addMatrix.length; i++) {
+                sumAnyCol += addMatrix[i][getColumnNum];
+            }
+        }
+        System.out.println("Sum Any Column : " + sumAnyCol);
+        
+        
+        // Any Row Sum
+        System.out.print("Sum Number Of Row : ");
+        int sumAnyRow = 0,getRowNum;
+        getRowNum = scanner.nextInt();
+        scanner.nextLine();
+        for (int i = 0; i < addMatrix.length; i++) {
+            if (getColumnNum >= 0 || getColumnNum <= rows ) {
+                sumAnyRow += addMatrix[getRowNum][i];
+            }
+        }
+        System.out.println("Sum Any Column : " + sumAnyRow);
+        
+        
         
     }
 }

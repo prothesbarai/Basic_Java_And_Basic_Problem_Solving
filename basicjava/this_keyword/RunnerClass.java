@@ -15,26 +15,42 @@ public class RunnerClass {
         
         int[][] myArray = new int[row][col];
         
-        // Input....
+        // Input From User....
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < col; j++) {
+                System.out.printf("myArray[%d][%d] = ",i,j);
                 myArray[i][j] = scanner.nextInt();
             }
         }
         
         System.out.println("\n\n===================================================\n\n");
         
-        // Output .....
+        // Output Here .....
         for (int i = 0; i < row; i++) {
-            
             for (int j = 0; j < col; j++) {
                 System.out.print(" "+myArray[i][j]);
             }
-            
             System.out.println();
         }
         
         
+        // All Value Sum
+        int sum = 0;
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
+                sum += myArray[i][j];
+            }
+        }
+        System.out.println("Sum = "+sum);
+        
+        
+        int sum1 = 0,sumOfCol;
+        sumOfCol = scanner.nextInt();
+        scanner.nextLine();
+        for (int i = 0; i < myArray.length; i++) {
+            sum1 += myArray[i][sumOfCol];
+        }
+        System.out.println("Sum Of First Col : "+sum1);
         
         
         
