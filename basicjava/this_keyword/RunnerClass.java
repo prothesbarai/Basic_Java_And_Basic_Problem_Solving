@@ -44,13 +44,7 @@ public class RunnerClass {
         System.out.println("Sum = "+sum);
         
         
-        int sum1 = 0,sumOfCol;
-        sumOfCol = scanner.nextInt();
-        scanner.nextLine();
-        for (int i = 0; i < myArray.length; i++) {
-            sum1 += myArray[i][sumOfCol];
-        }
-        System.out.println("Sum Of First Col : "+sum1);
+        
         
         
         
