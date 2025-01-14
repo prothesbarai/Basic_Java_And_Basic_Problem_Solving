@@ -67,7 +67,7 @@ public class RunnerClass {
         numberOfRow = scanner.nextInt();
         scanner.nextLine();
         if (numberOfRow >= 0 && numberOfRow < rows) {
-            for (int i = 0; i < myArray.length; i++) {
+            for (int i = 0; i < myArray[numberOfRow].length; i++) {
                 sumOfRow += myArray[numberOfRow][i];
             }
             System.out.println("Sum Of " + numberOfRow + " no Of Row is : " + sumOfRow);

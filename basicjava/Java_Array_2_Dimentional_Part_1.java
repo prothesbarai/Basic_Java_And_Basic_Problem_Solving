@@ -89,7 +89,7 @@ public class Java_Array_2_Dimentional_Part_1 {
         int sumAnyRow = 0,getRowNum;
         getRowNum = scanner.nextInt();
         scanner.nextLine();
-        for (int i = 0; i < addMatrix.length; i++) {
+        for (int i = 0; i < addMatrix[getRowNum].length; i++) {
             if (getColumnNum >= 0 || getColumnNum <= rows ) {
                 sumAnyRow += addMatrix[getRowNum][i];
             }
