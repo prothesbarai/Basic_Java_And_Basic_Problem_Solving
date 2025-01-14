@@ -46,6 +46,7 @@ public class RunnerClass {
 
         // Sum Of Any Comumn Number
         int numberOfCol, sumOfCol = 0;
+        System.out.print("Sum Number Of Column : ");
         numberOfCol = scanner.nextInt();
         scanner.nextLine();
 
@@ -54,11 +55,26 @@ public class RunnerClass {
                 sumOfCol += myArray[i][numberOfCol];
             }
             System.out.println("Sum Of " + numberOfCol + " no Of Column is : " + sumOfCol);
+            System.out.println();
         } else {
-            System.out.println("Out Of Column Length [ length is : 0 - " + (cols-1) + "]");
+            System.out.println("Out Of Column Length [ length is : 0 - " + (cols - 1) + "]\n");
         }
 
         
+        // Sum Of Any Row Number
+        int numberOfRow, sumOfRow = 0;
+        System.out.print("Sum Number Of Row : ");
+        numberOfRow = scanner.nextInt();
+        scanner.nextLine();
+        if (numberOfRow >= 0 && numberOfRow < rows) {
+            for (int i = 0; i < myArray.length; i++) {
+                sumOfRow += myArray[numberOfRow][i];
+            }
+            System.out.println("Sum Of " + numberOfRow + " no Of Row is : " + sumOfRow);
+            System.out.println();
+        } else {
+            System.out.println("Out Of Row Length [ length is : 0 - " + (rows - 1) + "]\n");
+        }
 
     }
 }
