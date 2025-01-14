@@ -5,6 +5,9 @@ import java.util.Scanner;
 public class RunnerClass {
 
     public static void main(String[] args) {
+        
+        
+        
         int rows, cols, sum = 0;
         Scanner scanner = new Scanner(System.in);
         System.out.print("Number Of Row : ");
@@ -56,5 +59,8 @@ public class RunnerClass {
         System.out.println("Sum Of Upper Triangle : "+sumOfUpperTrinangle);
         System.out.println("Sum Of Lower Triangle : "+sumOfLowerTriangle);
 
+        
+        
+        
     }
 }
