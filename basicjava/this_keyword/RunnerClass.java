@@ -55,7 +55,7 @@ public class RunnerClass {
             }
             System.out.println("Sum Of " + numberOfCol + " no Of Column is : " + sumOfCol);
         } else {
-            System.out.println("Out Of Column Length [ length is : 0 - " + (myArray.length-1) + "]");
+            System.out.println("Out Of Column Length [ length is : 0 - " + (cols-1) + "]");
         }
 
         
