@@ -35,46 +35,26 @@ public class RunnerClass {
             System.out.println();
         }
 
-        // Sum of all array
+        
+        // Diagonal Triangle Summations
+        System.out.println("Printed Sum of Diagonal Ray : ");
+        int sumOfDiagonal = 0,sumOfUpperTrinangle = 0,sumOfLowerTriangle = 0;
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
-                sum += myArray[i][j];
+                if (i == j) {
+                    sumOfDiagonal += myArray[i][j];
+                }
+                if (i<j) {
+                    sumOfUpperTrinangle += myArray[i][j];
+                }
+                if (i>j) {
+                    sumOfLowerTriangle += myArray[i][j];
+                }
             }
         }
-        System.out.println("Sum : " + sum);
-        System.out.println();
-
-        // Sum Of Any Comumn Number
-        int numberOfCol, sumOfCol = 0;
-        System.out.print("Sum Number Of Column : ");
-        numberOfCol = scanner.nextInt();
-        scanner.nextLine();
-
-        if (numberOfCol >= 0 && numberOfCol < cols) {
-            for (int i = 0; i < myArray.length; i++) {
-                sumOfCol += myArray[i][numberOfCol];
-            }
-            System.out.println("Sum Of " + numberOfCol + " no Of Column is : " + sumOfCol);
-            System.out.println();
-        } else {
-            System.out.println("Out Of Column Length [ length is : 0 - " + (cols - 1) + "]\n");
-        }
-
-        
-        // Sum Of Any Row Number
-        int numberOfRow, sumOfRow = 0;
-        System.out.print("Sum Number Of Row : ");
-        numberOfRow = scanner.nextInt();
-        scanner.nextLine();
-        if (numberOfRow >= 0 && numberOfRow < rows) {
-            for (int i = 0; i < myArray[numberOfRow].length; i++) {
-                sumOfRow += myArray[numberOfRow][i];
-            }
-            System.out.println("Sum Of " + numberOfRow + " no Of Row is : " + sumOfRow);
-            System.out.println();
-        } else {
-            System.out.println("Out Of Row Length [ length is : 0 - " + (rows - 1) + "]\n");
-        }
+        System.out.println("Sum Of Diagonal : "+sumOfDiagonal);
+        System.out.println("Sum Of Upper Triangle : "+sumOfUpperTrinangle);
+        System.out.println("Sum Of Lower Triangle : "+sumOfLowerTriangle);
 
     }
 }
