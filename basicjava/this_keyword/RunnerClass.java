@@ -16,7 +16,7 @@ public class RunnerClass {
         // Input in two dimentional array
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
-                System.out.printf("\nmyArray[%d][%d] = ",i,j);
+                System.out.printf("\nmyArray[%d][%d] = ", i, j);
                 myArray[i][j] = scanner.nextInt();
             }
         }
@@ -24,7 +24,7 @@ public class RunnerClass {
         System.out.println("\n");
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
-                System.out.print(myArray[i][j]+" ");
+                System.out.print(myArray[i][j] + " ");
             }
             System.out.println();
         }
@@ -35,25 +35,38 @@ public class RunnerClass {
                 sum += myArray[i][j];
             }
         }
-        System.out.println("\nSum Of All Values : "+sum);
+        System.out.println("\nSum Of All Values : " + sum);
         // Sum Of All values Diagonally
         int sumOfDiagonal = 0, sumOfUpperTriangle = 0, sumOfLowerTriangle = 0;
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
-                if (i==j) {
+                if (i == j) {
                     sumOfDiagonal += myArray[i][j];
                 }
-                if (i<j) {
+                if (i < j) {
                     sumOfUpperTriangle += myArray[i][j];
                 }
-                if (i>j) {
+                if (i > j) {
                     sumOfLowerTriangle += myArray[i][j];
                 }
             }
         }
-        System.out.println("\nSum Diagonal : "+sumOfDiagonal);
-        System.out.println("Sum Of Upper Triangle : "+sumOfUpperTriangle);
-        System.out.println("Sum Of Lower Triangle : "+sumOfLowerTriangle);
-        
+        System.out.println("Sum Diagonal : " + sumOfDiagonal);
+        System.out.println("Sum Of Upper Triangle : " + sumOfUpperTriangle);
+        System.out.println("Sum Of Lower Triangle : " + sumOfLowerTriangle);
+        // Sum An Any Rows
+        int numOfRow, sumOfRow = 0;
+        System.out.print("You Sum Number Of Row : ");
+        numOfRow = scanner.nextInt();
+        scanner.nextLine();
+        if (numOfRow >= 0 && numOfRow < rows) {
+            for (int i = 0; i < myArray[numOfRow].length; i++) {
+                sumOfRow += myArray[numOfRow][i];
+            }
+        }else{
+            System.out.println("The row out of range");
+        }
+        System.out.println("Sum Of " + numOfRow + "Number Of Row is : " + sumOfRow);
+
     }
 }
