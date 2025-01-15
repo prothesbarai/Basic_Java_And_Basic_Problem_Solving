@@ -63,10 +63,14 @@ public class RunnerClass {
             for (int i = 0; i < myArray[numOfRow].length; i++) {
                 sumOfRow += myArray[numOfRow][i];
             }
+            System.out.println("Sum Of " + numOfRow + "Number Of Row is : " + sumOfRow);
         }else{
             System.out.println("The row out of range");
         }
-        System.out.println("Sum Of " + numOfRow + "Number Of Row is : " + sumOfRow);
+        
 
+        
+        
+        
     }
 }
