@@ -100,5 +100,17 @@ public class RunnerClass {
         }
         
         
+        // Now Add Two Array here
+        System.out.println("\n\n");
+        int[][] addArray = new int[rows][cols];
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                addArray[i][j] = myArray[i][j] + myArray2[i][j];
+                System.out.print(addArray[i][j]+" ");
+            }
+            System.out.println();
+        }
+        
+        
     }
 }
