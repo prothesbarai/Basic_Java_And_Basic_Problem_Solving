@@ -80,9 +80,24 @@ public class RunnerClass {
         }else{
             System.out.println("The Cols out of range");
         }
-
-        
-        
+        // Now again input other an Two Dimentional array
+        // again creation and declaration an array here
+        int[][] myArray2 = new int[rows][cols];
+        // Only input And Col and Row Previous Collected
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                System.out.printf("\nmyArray2[%d][%d] = ",i,j);
+                myArray2[i][j] = scanner.nextInt();
+            }
+        }
+        // Output This array
+        System.out.println();
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                System.out.print(myArray2[i][j]+" ");
+            }
+            System.out.println();
+        }
         
         
     }
