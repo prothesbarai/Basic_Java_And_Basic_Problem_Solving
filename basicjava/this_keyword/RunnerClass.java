@@ -91,7 +91,7 @@ public class RunnerClass {
             }
         }
         // Output This array
-        System.out.println();
+        System.out.println("\n\n");
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
                 System.out.print(myArray2[i][j]+" ");
