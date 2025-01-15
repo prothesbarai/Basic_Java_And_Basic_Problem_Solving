@@ -63,12 +63,25 @@ public class RunnerClass {
             for (int i = 0; i < myArray[numOfRow].length; i++) {
                 sumOfRow += myArray[numOfRow][i];
             }
-            System.out.println("Sum Of " + numOfRow + "Number Of Row is : " + sumOfRow);
+            System.out.println("Sum Of " + numOfRow + " number Of Row is : " + sumOfRow);
         }else{
             System.out.println("The row out of range");
         }
-        
+        // Sum An Any Columns
+        int numOfCols,sumOfCols = 0;
+        System.out.print("You Sum Number Of Cols : ");
+        numOfCols = scanner.nextInt();
+        scanner.nextLine();
+        if (numOfCols >= 0 && numOfCols < cols) {
+            for (int i = 0; i < myArray[numOfCols].length; i++) {
+                sumOfCols += myArray[i][numOfCols];
+            }
+            System.out.println("Sum Of "+numOfCols + " number of cols is  : "+sumOfCols);
+        }else{
+            System.out.println("The Cols out of range");
+        }
 
+        
         
         
         
