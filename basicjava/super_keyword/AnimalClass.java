@@ -22,14 +22,22 @@ public class AnimalClass{
         }
     }
     
+    public void getMeetWeight(){
+        if (names.contains("cow") || names.contains("Cow")) {
+            double getMeetCow = weight * 0.55;
+            System.out.println("The "+names+" Amount of get Meets is : "+getMeetCow);
+        }
+        if (names.contains("Goat") || names.contains("goat")) {
+            double getMeetGoat = weight * 0.5;
+            System.out.println("The "+names+" Amount of get Meets is : "+getMeetGoat);
+        }
+        if (names.contains("Hen") || names.contains("hen")) {
+            double getMeetHen = weight * 0.7;
+            System.out.println("The "+names+" Amount of get Meets is : "+getMeetHen);
+        }
+    }
     
     
-    public void GoatMeetWeight(){
-        double getMeetGoat = weight * 0.5;
-    }
-    public void HenMeetWeight(){
-        double getMeetHen = weight * 0.7;
-    }
     
     public void setPrint(){
         System.out.println("Animal Name is : "+names);
@@ -37,6 +45,7 @@ public class AnimalClass{
         System.out.println("This Animal is : "+legs+" Legs");
         System.out.println("And Weight is : "+weight);
         wools();
+        getMeetWeight();
     }
     
 }
