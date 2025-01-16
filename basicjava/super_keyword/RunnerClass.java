@@ -5,5 +5,8 @@ public class RunnerClass {
         BigAnimal cowClass = new BigAnimal("Cow", "Black-White", 4, 400, true);
         cowClass.setPrint();
         
+        BigAnimal goatClass = new BigAnimal("Goat", "Black", 4, 60, true);
+        goatClass.setPrint();
+        
     }
 }
