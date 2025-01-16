@@ -46,7 +46,6 @@ public class AnimalClass{
         System.out.println("And Weight is : "+weight);
         wools();
         getMeetWeight();
-        System.out.println();
     }
     
 }
