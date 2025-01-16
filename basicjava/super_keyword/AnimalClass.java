@@ -1,11 +1,13 @@
 package com.mycompany.basicjava.super_keyword;
 public class AnimalClass{
+    public String names;
     public String colors;
     public int legs;
     public double weight;
     public boolean wool;
     
-    public AnimalClass(String colors,int legs,double weight,boolean wool){
+    public AnimalClass(String names,String colors,int legs,double weight,boolean wool){
+        this.names = names;
         this.colors = colors;
         this.legs = legs;
         this.weight = weight;
@@ -30,6 +32,7 @@ public class AnimalClass{
     }
     
     public void setPrint(){
+        System.out.println("Animal Name is : "+names);
         System.out.println("Animal Color is : "+colors);
         System.out.println("This Animal is : "+legs+" Legs");
         System.out.println("And Weight is : "+weight);
