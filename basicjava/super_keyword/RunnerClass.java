@@ -8,5 +8,8 @@ public class RunnerClass {
         BigAnimal goatClass = new BigAnimal("Goat", "Black", 4, 60, true);
         goatClass.setPrint();
         
+        BigAnimal henClass = new BigAnimal("Hen", "Black-Red", 2, 2.8, true);
+        henClass.setPrint();
+        
     }
 }
