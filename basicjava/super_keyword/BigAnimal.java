@@ -6,7 +6,6 @@ public class BigAnimal extends AnimalClass{
     }
    
     
-    
     @Override
     public void setPrint(){
         super.setPrint();
