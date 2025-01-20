@@ -8,6 +8,9 @@ public class RunnerClass {
         
         int x = 6;
         System.out.println(x);
+        x = 8;
+        System.out.println(x);
+        x++;
         
     }
 }
